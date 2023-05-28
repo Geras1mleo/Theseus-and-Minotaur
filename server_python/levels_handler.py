@@ -19,7 +19,7 @@ def get_levels():
 def get_level(level: int):
     path = f'level{level}.json'
     if path in get_levels():
-        with open('levels/' + path, 'r', encoding='utf-8') as file:
+        with open('../levels/' + path, 'r', encoding='utf-8') as file:
             return '\n'.join(file.readlines())
     else:
         return None
