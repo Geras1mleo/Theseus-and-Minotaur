@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Theseus and Minotaur</title>
+</head>
+<body>
+<h1 class="title">Theseus and Minotaur</h1>
+<div style="display: flex; height: 100%">
+    <div class="helpContainer">
+        <div style="display: flex">
+            <h1>Level:</h1>
+            <h1 id="levelLabel">0</h1>
+        </div>
+        <div style="display: flex">
+            <h1>Highscore:</h1>
+            <h1 id="highscoreLabel">0</h1>
+        </div>
+        <div style="display: flex">
+            <h1>Score:</h1>
+            <h1 id="scoreLabel">0</h1>
+        </div>
+        <div style="display: flex">
+            <h1 style="color: red; visibility: hidden" id="errorLabel">Something went wrong</h1>
+        </div>
+        <div style="margin-top: 10px">
+            <div id="randomLabel" class="randomLabel">Random level</div>
+        </div>
+        <div style="width: fit-content; margin-top: 20px">
+            <div id="upArrow" class="keyHelp arrowKey" style="margin: auto"><span class="material-icons">keyboard_arrow_up</span>
+            </div>
+            <div style="display: flex; margin-top: 2px">
+                <div id="leftArrow" class="keyHelp arrowKey"><span class="material-icons">keyboard_arrow_left</span>
+                </div>
+                <div id="downArrow" class="keyHelp arrowKey"><span class="material-icons">keyboard_arrow_down</span>
+                </div>
+                <div id="rightArrow" class="keyHelp arrowKey"><span class="material-icons">keyboard_arrow_right</span>
+                </div>
+            </div>
+        </div>
+        <div class="helpDiv">
+            <div id="spaceKey" class="keyHelp spaceKey">Space</div>
+            <span class="captionRest" style="margin-left: 10px">Skip move</span>
+        </div>
+        <div class="helpDiv">
+            <div id="resetKey" class="keyHelp" onclick="resetClicked()">R</div>
+            <span class="captionRest">eset game</span>
+        </div>
+        <div class="helpDiv">
+            <div id="nextKey" class="keyHelp" onclick="nextLevelClicked()">N</div>
+            <span class="captionRest">ext level</span>
+        </div>
+        <div class="helpDiv">
+            <div id="previousKey" class="keyHelp" onclick="previousLevelClicked()">P</div>
+            <span class="captionRest">revious level</span>
+        </div>
+    </div>
+    <div id="gameBox" class="canvas-parent">
+        <div id="theseus" class="movable theseus"></div>
+        <div id="minotaur" class="movable minotaur"></div>
+        <div id="exitLabel" class="exitLabel">EXIT</div>
+        <canvas id="canvas"></canvas>
+    </div>
+</div>
+<script type="module" src="js/index.js"></script>
+</body>
+</html>

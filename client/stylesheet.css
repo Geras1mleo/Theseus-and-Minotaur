@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, serif;
+    /* make not scrollable for correct arrow-keys behaviour*/
+    height: 100%;
+    overflow: hidden;
+}
+
+.title {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    background-color: #111010;
+    line-height: 100px
+}
+
+.movable {
+    background-color: darkgray;
+    border: white solid 1px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.theseus {
+    background-color: #007fff;
+    box-shadow: 0 0 20px #0055ff;
+}
+
+.minotaur {
+    background-color: #ff4e00;
+    box-shadow: 0 0 20px #ff3b00;
+    z-index: 2;
+}
+
+.exitLabel {
+    font-family: sans-serif;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: green;
+    position: absolute;
+    text-align: center;
+    vertical-align: center;
+    line-height: 90px;
+    user-select: none;
+}
+
+.canvas-parent {
+    visibility: hidden;
+    margin: 100px auto auto auto;
+    width: fit-content;
+    position: relative;
+}
+
+.helpContainer {
+    font: 22px arial;
+    color: white;
+    width: fit-content;
+    margin: 10px 0 0 30px;
+}
+
+.helpContainer div h1 {
+    margin: 10px 10px;
+    font-size: 35px;
+}
+
+.helpDiv {
+    display: flex;
+    margin: 20px 0;
+    height: 40px;
+}
+
+.keyHelp {
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    cursor: pointer;
+    color: #71D4FE;
+    background: #2F3336;
+    text-align: center;
+    border-radius: 10%;
+    user-select: none;
+}
+
+.randomLabel {
+    width: 160px;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+    color: #71D4FE;
+    background: #2F3336;
+    line-height: 50px;
+    height: 50px;
+    user-select: none;
+}
+
+.captionRest {
+    line-height: 40px;
+    color: #71D4FE;
+}
+
+.arrowKey {
+    margin: 2px;
+}
+
+.spaceKey {
+    width: 120px;
+    border-radius: 2%;
+}

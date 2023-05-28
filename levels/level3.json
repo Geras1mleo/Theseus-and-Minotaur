@@ -1,0 +1,35 @@
+{
+    "tiles": [
+        { "x": 0, "y": 0, "left": true, "right": false, "top": true, "bottom": false },
+        { "x": 1, "y": 0, "left": false, "right": false, "top": true, "bottom": true },
+        { "x": 2, "y": 0, "left": false, "right": true, "top": true, "bottom": false },
+
+        { "x": 0, "y": 1, "left": true, "right": false, "top": false, "bottom": false },
+        { "x": 1, "y": 1, "left": false, "right": false, "top": false, "bottom": false },
+        { "x": 2, "y": 1, "left": false, "right": false, "top": false, "bottom": false },
+        { "x": 3, "y": 1, "left": false, "right": false, "top": true, "bottom": true },
+
+        { "x": 0, "y": 2, "left": true, "right": true, "top": false, "bottom": true },
+        { "x": 1, "y": 2, "left": false, "right": false, "top": false, "bottom": false },
+        { "x": 2, "y": 2, "left": false, "right": true, "top": false, "bottom": false },
+
+        { "x": 0, "y": 3, "left": true, "right": false, "top": false, "bottom": true },
+        { "x": 1, "y": 3, "left": false, "right": false, "top": false, "bottom": true },
+        { "x": 2, "y": 3, "left": false, "right": true, "top": false, "bottom": true }
+    ],
+
+    "theseus": {
+        "x": 1,
+        "y": 1
+    },
+
+    "minotaur": {
+        "x": 1,
+        "y": 0
+    },
+
+    "exit": {
+        "x": 3,
+        "y": 1
+    }
+}
